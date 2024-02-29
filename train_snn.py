@@ -9,6 +9,8 @@ import torch.nn as nn
 from archs.resnet_snn import ResNet19
 from torch.utils.data import Dataset
 from utils import data_transforms
+import sys
+sys.path.append('/Users/mustafa/Desktop/U of T /Third Year/SNN/Vision/spikingjelly/')
 from spikingjelly.clock_driven.functional import reset_net
 
 

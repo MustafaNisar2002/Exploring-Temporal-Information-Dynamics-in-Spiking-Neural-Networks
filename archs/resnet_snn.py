@@ -4,11 +4,13 @@ Reference:
 [1] Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun
     Deep Residual Learning for Image Recognition. arXiv:1512.03385
 '''
-import torch
+import torch 
 import torch.nn as nn
 import numpy as np
 import torch.nn.functional as F
 import torchvision
+import sys
+sys.path.append('/Users/mustafa/Desktop/U of T /Third Year/SNN/Vision/Understanding Temporal Information Dynamics in Spiking Neural Networks/Exploring-Temporal-Information-Dynamics-in-Spiking-Neural-Networks/spikingjelly')
 from spikingjelly.clock_driven import functional, layer, surrogate, neuron
 
 tau_global = 1. / (1. - 0.5)
